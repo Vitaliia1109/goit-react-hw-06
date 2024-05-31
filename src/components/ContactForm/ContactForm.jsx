@@ -46,12 +46,12 @@ export default function ContactForm() {
           Name
         </label>
         <Field className={css.input} type="text" name="name" id={nameId} />
-        <ErrorMessage className={css.error} name="name" as="span" />
+        <ErrorMessage className={css.error} name="name" component="span" />
         <label className={css.label} htmlFor={numberId}>
           Number
         </label>
         <Field className={css.input} type="text" name="number" id={numberId} />
-        <ErrorMessage className={css.error} name="number" as="span" />
+        <ErrorMessage className={css.error} name="number" component="span" />
         <button className={css.btn} type="submit">
           Add contact
         </button>
